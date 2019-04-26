@@ -28,6 +28,7 @@
     <section class="featured-posts no-padding-top">
       <div class="container">
         <!-- Post-->
+        {% for obj in object_list  %}
         <div class="row d-flex align-items-stretch">
           <div class="text col-lg-7">
             <div class="text-inner d-flex align-items-center">
@@ -48,6 +49,7 @@
           </div>
           <div class="image col-lg-5"><img src="{% static 'img/featured-pic-1.jpeg' %}" alt="..."></div>
         </div>
+        {% endfor %}
         <!-- Post        -->
         <div class="row d-flex align-items-stretch">
           <div class="image col-lg-5"><img src="{% static 'img/featured-pic-2.jpeg' %}" alt="..."></div>
